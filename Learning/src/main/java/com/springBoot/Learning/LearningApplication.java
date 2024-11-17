@@ -1,13 +1,11 @@
 package com.springBoot.Learning;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class LearningApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LearningApplication.class, args);
-	}
+    public static void main(String[] args) {
+        ArrayL arrayL = new ArrayL();
+        int[] arr = {1, 2, 3, 4, 5, 7, 18};
+        System.out.println("First Largest number in Array" + arrayL.firstLargeNumber(arr));
+    }
 
 }
