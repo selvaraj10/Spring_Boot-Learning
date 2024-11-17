@@ -1,5 +1,7 @@
 package com.springBoot.Learning;
 
+//import java.lang.reflect.Array;
+
 public class ArrayL {
 
     public int firstLargeNumber(int[] value) {
@@ -26,28 +28,42 @@ public class ArrayL {
         return secondLargest;
     }
 
-    public int smallestElement(int [] value){
+    public int smallestElement(int[] value) {
         int smallest = value[0];
-        for (int i : value){
-            if(i < smallest){
+        for (int i : value) {
+            if (i < smallest) {
                 smallest = i;
             }
         }
         return smallest;
     }
 
-    public int secondSmallestNumber(int [] value){
+    public int secondSmallestNumber(int[] value) {
         int secondSmallestNumber = Integer.MAX_VALUE;
         int smallestNumber = value[0];
-        for(int i: value){
-            if (i < smallestNumber){
+        for (int i : value) {
+            if (i < smallestNumber) {
                 secondSmallestNumber = smallestNumber;
                 smallestNumber = i;
-            }
-            else if(i > smallestNumber && i < secondSmallestNumber){
+            } else if (i > smallestNumber && i < secondSmallestNumber) {
                 secondSmallestNumber = i;
             }
         }
         return secondSmallestNumber;
+    }
+
+    public boolean sortedArr(int[] vale) {
+        int sortedMinimum = vale[0];
+//        Arrays.sort(vale);
+        for (int i = 1; i < vale.length; i++) {
+            if (vale[i] >= vale[i - 1]) {
+                continue;
+            } else {
+                return false;
+            }
+        }
+        return true;
+
+
     }
 }
