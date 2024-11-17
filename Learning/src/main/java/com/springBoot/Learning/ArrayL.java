@@ -3,11 +3,10 @@ package com.springBoot.Learning;
 public class ArrayL {
 
     public int firstLargeNumber(int[] value) {
-        int largeNumber = 0;
-        for (int i = 0; i < value.length; i++) {
-            largeNumber = value[i];
-            if (value[i] > largeNumber) {
-                largeNumber = value[i];
+        int largeNumber = Integer.MIN_VALUE;
+        for (int j : value) {
+            if (j > largeNumber) {
+                largeNumber = j;
             }
         }
         return largeNumber;
@@ -25,5 +24,30 @@ public class ArrayL {
             }
         }
         return secondLargest;
+    }
+
+    public int smallestElement(int [] value){
+        int smallest = value[0];
+        for (int i : value){
+            if(i < smallest){
+                smallest = i;
+            }
+        }
+        return smallest;
+    }
+
+    public int secondSmallestNumber(int [] value){
+        int secondSmallestNumber = Integer.MAX_VALUE;
+        int smallestNumber = value[0];
+        for(int i: value){
+            if (i < smallestNumber){
+                secondSmallestNumber = smallestNumber;
+                smallestNumber = i;
+            }
+            else if(i > smallestNumber && i < secondSmallestNumber){
+                secondSmallestNumber = i;
+            }
+        }
+        return secondSmallestNumber;
     }
 }
