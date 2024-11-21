@@ -1,7 +1,5 @@
 package com.springBoot.Learning;
 
-//import java.lang.reflect.Array;
-
 public class ArrayL {
 
     public int firstLargeNumber(int[] value) {
@@ -63,5 +61,19 @@ public class ArrayL {
             }
         }
         return true;
+    }
+
+    public int duplicateElementCount(int[] value) {
+        int i = 0;
+
+        for (int j = 0; j < value.length; j++) {
+            if (value[j] != value[i]) {
+                value[i + 1] = value[j];
+                i++;
+            }
+
+        }
+        return (i + 1);
+
     }
 }
