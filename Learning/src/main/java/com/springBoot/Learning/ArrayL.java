@@ -51,11 +51,10 @@ public class ArrayL {
     }
 
     public boolean sortedArr(int[] vale) {
-        int sortedMinimum = vale[0];
+//        int sortedMinimum = vale[0];
 //        Arrays.sort(vale);
         for (int i = 1; i < vale.length; i++) {
-            if (vale[i] >= vale[i - 1]) {
-                continue;
+            if (vale[i] >= vale[i - 1]) {continue;
             } else {
                 return false;
             }
