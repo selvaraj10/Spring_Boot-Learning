@@ -15,7 +15,7 @@ public class LinkedListL {
         }
     }
 
-    private LinkedListL (int value){
+    LinkedListL(int value){
         Node newNode = new Node(value);
     }
 
