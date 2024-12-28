@@ -149,7 +149,7 @@ public class LinkedListL {
         }
         if (index == 0) {
             return removeFirst();
-        } else if (index == length) {
+        } else if (index == length - 1) {
             return removeLast();
         }
 
@@ -165,7 +165,7 @@ public class LinkedListL {
         Node temp = head;
         head = tail;
         tail = temp;
-        Node after = temp.next;
+        Node after;
         Node before = null;
         for (int i = 0 ; i<length; i++){
             after = temp.next;
