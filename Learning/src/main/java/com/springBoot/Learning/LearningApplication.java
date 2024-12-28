@@ -18,7 +18,6 @@ public class LearningApplication {
 //        patternPrinting.bigPattern();
 
         LinkedListL linkedListL = new LinkedListL(4);
-
     }
 
 }
