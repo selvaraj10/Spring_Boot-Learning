@@ -17,8 +17,44 @@ public class LinkedListL {
 
     LinkedListL(int value){
         Node newNode = new Node(value);
+        this.head = newNode;
+        this.tail = newNode;
+        this.length = 1;
+
     }
 
+    public void printLst(){
+        Node temp = head;
+        while(temp != null){
+            System.out.println("List of Nodes -: " + temp.value + " ");
+            temp = temp.next;
+        }
+    }
+
+    public void getTail() {
+        System.out.println("Head -: " + head.value);;
+    }
+
+    public void getHead() {
+        System.out.println("Tail -: " + tail.value);;
+    }
+
+    public void getLength() {
+        System.out.println("Length -: " + length);;
+    }
+
+    public void append(int value){
+            Node newNode = new Node(value);
+            if (length == 0){
+                head = newNode;
+                tail = newNode;
+            }
+            else {
+                tail.next = newNode;
+                tail = newNode;
+                length++;
+            }
+    }
 
 
 }

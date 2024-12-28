@@ -18,6 +18,14 @@ public class LearningApplication {
 //        patternPrinting.bigPattern();
 
         LinkedListL linkedListL = new LinkedListL(4);
+
+        linkedListL.append(23);
+
+
+        linkedListL.getTail();
+        linkedListL.getHead();
+        linkedListL.getLength();
+        linkedListL.printLst();
     }
 
 }
