@@ -26,6 +26,7 @@ public class ArrayL {
         return secondLargest;
     }
 
+
     public int smallestElement(int[] value) {
         int smallest = value[0];
         for (int i : value) {
@@ -54,13 +55,30 @@ public class ArrayL {
 //        int sortedMinimum = vale[0];
 //        Arrays.sort(vale);
         for (int i = 1; i < vale.length; i++) {
-            if (vale[i] >= vale[i - 1]) {continue;
+            if (vale[i] >= vale[i - 1]) {
+                continue;
             } else {
                 return false;
             }
         }
         return true;
     }
+
+
+    public boolean check(int[] value) {
+        int count = 0;
+        int n = value.length;
+
+        for (int i = 0; i < n; i++) {
+            int ii = value[(i + 1) % n];
+            if (value[i] > value[(i + 1) % n]) {
+                ++count;
+            }
+        }
+
+        return (count <= 1);
+    }
+
 
     public int duplicateElementCount(int[] value) {
         int i = 0;
@@ -70,9 +88,16 @@ public class ArrayL {
                 value[i + 1] = value[j];
                 i++;
             }
-
         }
         return (i + 1);
+    }
 
+    public int[] rotateArrayOnePlace(int[] value, int n) {
+        int temp = value[0];
+        for (int i = 1; i < n; i++) {
+            value[i - 1] = value[i];
+        }
+        value[n - 1] = temp;
+        return value;
     }
 }
