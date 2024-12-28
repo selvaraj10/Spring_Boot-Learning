@@ -34,6 +34,12 @@ public class LearningApplication {
 
         System.out.println("Is value is set -: " +  linkedListL.set(1, 22));
 
+        System.out.println("Is value is insert  -: " +  linkedListL.insert(3, 26));
+
+        System.out.println("Is value is remove  -: " +  linkedListL.remove(3).value);
+
+        linkedListL.reverse();
+
         linkedListL.getHead();
         linkedListL.getTail();
         linkedListL.getLength();
