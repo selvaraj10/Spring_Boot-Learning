@@ -21,10 +21,18 @@ public class LearningApplication {
 
         linkedListL.append(23);
         linkedListL.append(3);
+        linkedListL.append(13);
+
+        linkedListL.prepend(1);
+        linkedListL.prepend(17);
+
+        System.out.println("Get node at n Index -: " +  linkedListL.get(3).value);
+
+        System.out.println("Removed node at first -: " + linkedListL.removeFirst().value);
 
         System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
-//        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
-//        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
+
+        System.out.println("Is value is set -: " +  linkedListL.set(1, 22));
 
         linkedListL.getHead();
         linkedListL.getTail();
