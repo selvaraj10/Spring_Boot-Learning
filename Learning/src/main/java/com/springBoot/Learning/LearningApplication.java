@@ -20,10 +20,14 @@ public class LearningApplication {
         LinkedListL linkedListL = new LinkedListL(4);
 
         linkedListL.append(23);
+        linkedListL.append(3);
 
+        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
+//        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
+//        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
 
-        linkedListL.getTail();
         linkedListL.getHead();
+        linkedListL.getTail();
         linkedListL.getLength();
         linkedListL.printLst();
     }
