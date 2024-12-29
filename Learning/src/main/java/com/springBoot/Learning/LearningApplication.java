@@ -1,5 +1,7 @@
 package com.springBoot.Learning;
 
+import java.util.LinkedList;
+
 public class LearningApplication {
 
     public static void main(String[] args) {
@@ -16,6 +18,8 @@ public class LearningApplication {
 //        System.out.println("Duplicate count in Array = " + arrayL.duplicateElementCount(arr));
 //        System.out.println("Rotate Array values = " + Arrays.toString(arrayL.rotateArrayOnePlace(arr, arr.length)));
 //        patternPrinting.bigPattern();
+
+        LinkedList linkedList = new LinkedList();
 
         LinkedListL linkedListL = new LinkedListL(4);
 
