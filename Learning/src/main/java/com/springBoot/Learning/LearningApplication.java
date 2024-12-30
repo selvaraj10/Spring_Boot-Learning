@@ -1,6 +1,7 @@
 package com.springBoot.Learning;
 
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class LearningApplication {
 
@@ -20,6 +21,7 @@ public class LearningApplication {
 //        patternPrinting.bigPattern();
 
         LinkedList linkedList = new LinkedList();
+        Stack stack=new Stack();
 
         LinkedListL linkedListL = new LinkedListL(4);
 
