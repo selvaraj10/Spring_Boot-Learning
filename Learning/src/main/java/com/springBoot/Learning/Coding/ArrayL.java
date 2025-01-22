@@ -1,4 +1,4 @@
-package com.springBoot.Learning;
+package com.springBoot.Learning.Coding;
 
 public class ArrayL {
 
@@ -65,17 +65,16 @@ public class ArrayL {
     }
 
 
-    public boolean check(int[] value) {
+    public boolean checkArrayShortedAndRotated(int[] value) {
         int count = 0;
         int n = value.length;
-
         for (int i = 0; i < n; i++) {
             int ii = value[(i + 1) % n];
             if (value[i] > value[(i + 1) % n]) {
                 ++count;
             }
         }
-
+//It will agree only one time that is named reversed
         return (count <= 1);
     }
 

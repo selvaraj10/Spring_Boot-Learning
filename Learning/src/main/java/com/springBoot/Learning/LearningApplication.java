@@ -1,5 +1,7 @@
 package com.springBoot.Learning;
 
+import com.springBoot.Learning.util.LinkedListL;
+
 import java.util.LinkedList;
 import java.util.Stack;
 
@@ -20,36 +22,36 @@ public class LearningApplication {
 //        System.out.println("Rotate Array values = " + Arrays.toString(arrayL.rotateArrayOnePlace(arr, arr.length)));
 //        patternPrinting.bigPattern();
 
-        LinkedList linkedList = new LinkedList();
-        Stack stack=new Stack();
-
-        LinkedListL linkedListL = new LinkedListL(4);
-
-        linkedListL.append(23);
-        linkedListL.append(3);
-        linkedListL.append(13);
-
-        linkedListL.prepend(1);
-        linkedListL.prepend(17);
-
-        System.out.println("Get node at n Index -: " +  linkedListL.get(3).value);
-
-        System.out.println("Removed node at first -: " + linkedListL.removeFirst().value);
-
-        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
-
-        System.out.println("Is value is set -: " +  linkedListL.set(1, 22));
-
-        System.out.println("Is value is insert  -: " +  linkedListL.insert(3, 26));
-
-        System.out.println("Is value is remove  -: " +  linkedListL.remove(3).value);
-
-        linkedListL.reverse();
-
-        linkedListL.getHead();
-        linkedListL.getTail();
-        linkedListL.getLength();
-        linkedListL.printLst();
+//        LinkedList linkedList = new LinkedList();
+//        Stack stack=new Stack();
+//
+//        LinkedListL linkedListL = new LinkedListL(4);
+//
+//        linkedListL.append(23);
+//        linkedListL.append(3);
+//        linkedListL.append(13);
+//
+//        linkedListL.prepend(1);
+//        linkedListL.prepend(17);
+//
+//        System.out.println("Get node at n Index -: " +  linkedListL.get(3).value);
+//
+//        System.out.println("Removed node at first -: " + linkedListL.removeFirst().value);
+//
+//        System.out.println("Removed node at last -: " + linkedListL.removeLast().value);
+//
+//        System.out.println("Is value is set -: " +  linkedListL.set(1, 22));
+//
+//        System.out.println("Is value is insert  -: " +  linkedListL.insert(3, 26));
+//
+//        System.out.println("Is value is remove  -: " +  linkedListL.remove(3).value);
+//
+//        linkedListL.reverse();
+//
+//        linkedListL.getHead();
+//        linkedListL.getTail();
+//        linkedListL.getLength();
+//        linkedListL.printLst();
     }
 
 }

@@ -1,11 +1,11 @@
-package com.springBoot.Learning;
+package com.springBoot.Learning.util;
 
 public class LinkedListL {
     private Node head;
     private Node tail;
     private int length;
 
-    LinkedListL(int value) {
+    public LinkedListL(int value) {
         Node newNode = new Node(value);
         this.head = newNode;
         this.tail = newNode;

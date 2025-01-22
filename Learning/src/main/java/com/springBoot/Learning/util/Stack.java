@@ -1,4 +1,4 @@
-package com.springBoot.Learning;
+package com.springBoot.Learning.util;
 
 public class Stack {
     private Node top;

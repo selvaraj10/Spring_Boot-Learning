@@ -1,4 +1,4 @@
-package com.springBoot.Learning;
+package com.springBoot.Learning.Coding;
 
 public class PatternPrinting {
     public void bigPattern(){
