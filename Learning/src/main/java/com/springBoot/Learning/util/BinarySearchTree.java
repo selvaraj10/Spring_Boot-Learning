@@ -46,14 +46,13 @@ public class BinarySearchTree {
                 return true;
             }
             if(temp.value > value){
-                if (temp.left != null){
                     temp = temp.left;
-                }
+            }
+            else if(temp.value < value) {
+                    temp = temp.right;
             }
             else {
-                if (temp.right != null){
-                    temp = temp.right;
-                }
+                return true;
             }
         }
         return false;
